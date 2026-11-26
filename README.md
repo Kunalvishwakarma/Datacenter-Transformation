@@ -81,12 +81,23 @@ flowchart LR
 - Supplier and change-window dependencies
 - Rollback feasibility and recovery time
 
+## Detailed portfolio artefacts
+
+- [Synthetic hybrid datacenter migration case study](case-study/SYNTHETIC-HYBRID-DATACENTER-MIGRATION.md)
+- [Discovery inventory template](templates/DISCOVERY-INVENTORY.md)
+- [Service dependency mapping guide](templates/DEPENDENCY-MAPPING.md)
+- [Migration wave tracker (CSV)](templates/MIGRATION-WAVE-TRACKER.csv)
+- [Cutover and rollback runbook template](runbooks/CUTOVER-ROLLBACK-RUNBOOK.md)
+- [Risk register (CSV)](templates/RISK-REGISTER.csv)
+
+## Portfolio disclaimer
+
+The case study, identifiers, architecture and sample records are synthetic and are provided to demonstrate methodology. They do not represent a specific employer, customer, production environment or verified project outcome. Personal professional experience should be described separately and only at a level approved for public disclosure.
+
 ## Roadmap
 
-- [ ] Add a discovery workbook template
-- [ ] Add a dependency-mapping example using synthetic services
-- [ ] Add a migration-wave tracker
-- [ ] Add a cutover and rollback runbook
-- [ ] Add a decommissioning evidence checklist
-
-All examples must use synthetic service names, sites, IP addresses and data.
+- [x] Add a discovery inventory template
+- [x] Add a dependency-mapping example using synthetic services
+- [x] Add a migration-wave tracker
+- [x] Add a cutover and rollback runbook
+- [x] Add a risk register
