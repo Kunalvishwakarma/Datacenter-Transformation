@@ -1,12 +1,16 @@
 # Datacenter Transformation
 
-**Discovery | Migration planning | Transition | Decommissioning**
+**Datacenter migration | Infrastructure modernisation | Transition | Decommissioning**
 
-A collection of reusable methods and templates for planning and delivering datacenter and infrastructure transformation initiatives.
+My professional experience includes datacenter migration and decommissioning initiatives across the **United States, Norway and APAC**. Working across different regions and enterprise environments has reinforced the importance of disciplined discovery, dependency understanding, migration sequencing, stakeholder coordination, controlled change and operational transition.
 
-This repository turns broad delivery experience into generic, reusable guidance. It does not contain customer migration plans, internal records or production architecture.
+This repository presents the delivery approach and reusable controls behind a well-governed transformation. The examples are synthetic and publication-safe; they do not reproduce customer plans, internal records or production architecture.
 
-## Transformation lifecycle
+## Delivery experience translated into a repeatable approach
+
+A successful datacenter transformation is more than moving workloads. It requires a clear view of what exists, how services depend on one another, what the target environment must provide, how each migration will be validated, and when the legacy estate can be safely retired.
+
+The lifecycle represented here is:
 
 ```mermaid
 flowchart LR
@@ -16,70 +20,30 @@ flowchart LR
     D --> E[Prepare]
     E --> F[Migrate]
     F --> G[Validate]
-    G --> H[Optimize]
+    G --> H[Transition]
     H --> I[Decommission]
 ```
 
-## Workstreams
+## Key delivery workstreams
 
-| Workstream | Typical activities | Evidence / output |
+| Workstream | Delivery focus | Typical outcome |
 |---|---|---|
-| Discovery | Inventory, ownership, dependencies, utilization | Validated inventory |
-| Architecture | Target-state design, connectivity, security | Approved design |
-| Migration planning | Waves, sequencing, prerequisites, downtime | Migration plan |
-| Execution | Change control, cutover, rollback | Change and execution record |
-| Validation | Service, performance, security and user checks | Acceptance evidence |
-| Transition | Support model, runbooks, monitoring | Operational handover |
-| Decommissioning | Data retention, access removal, asset disposal | Closure record |
+| Discovery | Inventory, ownership, dependencies and utilisation | Validated scope and baseline |
+| Architecture | Target-state design, connectivity, security and resilience | Agreed technical design |
+| Migration planning | Sequencing, waves, prerequisites and downtime | Executable migration plan |
+| Execution | Change control, cutover coordination and rollback readiness | Controlled implementation |
+| Validation | Service, performance, security and user checks | Evidence-based acceptance |
+| Transition | Support model, runbooks, monitoring and ownership | Operational handover |
+| Decommissioning | Data retention, access removal, asset disposal and closure | Controlled retirement |
 
-## Migration wave planning template
+## What this portfolio demonstrates
 
-| Field | Example / guidance |
-|---|---|
-| Wave ID | WAVE-001 |
-| Service / application | Synthetic service name |
-| Business owner | Role, not a real person's details |
-| Technical owner | Role or team |
-| Dependencies | Upstream and downstream synthetic service IDs |
-| Target platform | Generic target environment |
-| Prerequisites | Network, identity, DNS, backup, access |
-| Planned window | Approved change window |
-| Validation | Functional and non-functional checks |
-| Rollback trigger | Measurable failure condition |
-| Status | Proposed / ready / in progress / complete |
-
-## Cutover readiness checklist
-
-- [ ] Scope, owners and acceptance criteria confirmed
-- [ ] Dependencies and data flows mapped
-- [ ] Backup and restore tested
-- [ ] Network, DNS, firewall and identity prerequisites validated
-- [ ] Monitoring and alerting operational
-- [ ] Change approvals and stakeholder communications complete
-- [ ] Cutover sequence and decision points rehearsed
-- [ ] Rollback plan and rollback authority confirmed
-- [ ] Business and technical validation owners available
-- [ ] Support handover and hypercare arrangements agreed
-
-## Decommissioning controls
-
-- Confirm service owner approval and dependency clearance.
-- Verify retention, legal hold and data sanitization requirements.
-- Remove access and credentials through approved processes.
-- Update asset, configuration and service records.
-- Confirm monitoring, backup and support dependencies are retired.
-- Obtain closure evidence and formal sign-off.
-
-## Risk categories to assess
-
-- Unknown or undocumented dependencies
-- Data integrity and consistency
-- Network, DNS and identity readiness
-- Downtime and business continuity
-- Capacity and performance
-- Security and access control
-- Supplier and change-window dependencies
-- Rollback feasibility and recovery time
+- Structuring discovery and dependency mapping before migration decisions
+- Breaking complex scope into manageable migration waves
+- Tracking prerequisites, technical owners, business validation and readiness
+- Preparing cutover steps, decision points and rollback criteria
+- Managing risks across network, DNS, identity, data, capacity and suppliers
+- Planning service acceptance, hypercare, operational handover and decommissioning
 
 ## Detailed portfolio artefacts
 
@@ -90,14 +54,21 @@ flowchart LR
 - [Cutover and rollback runbook template](runbooks/CUTOVER-ROLLBACK-RUNBOOK.md)
 - [Risk register (CSV)](templates/RISK-REGISTER.csv)
 
-## Portfolio disclaimer
+## Example: migration readiness
 
-The case study, identifiers, architecture and sample records are synthetic and are provided to demonstrate methodology. They do not represent a specific employer, customer, production environment or verified project outcome. Personal professional experience should be described separately and only at a level approved for public disclosure.
+Before a workload enters a migration wave, confirm:
 
-## Roadmap
+- [ ] Scope, service owner and acceptance criteria are agreed
+- [ ] Upstream and downstream dependencies are mapped
+- [ ] Backup and restore approach is understood and tested
+- [ ] Network, DNS, firewall and identity prerequisites are validated
+- [ ] Monitoring and alerting are operational
+- [ ] Change approvals and stakeholder communications are complete
+- [ ] Cutover sequence and decision points are rehearsed
+- [ ] Rollback plan, trigger and decision authority are clear
+- [ ] Business and technical validation owners are available
+- [ ] Support handover and hypercare arrangements are agreed
 
-- [x] Add a discovery inventory template
-- [x] Add a dependency-mapping example using synthetic services
-- [x] Add a migration-wave tracker
-- [x] Add a cutover and rollback runbook
-- [x] Add a risk register
+## Responsible publication
+
+The case study, identifiers, architecture, volumes, timelines and sample records in this repository are synthetic and must not be interpreted as actual project metrics or verified personal outcomes. My real professional experience is described separately at a high level, without customer names, confidential information or unapproved project details. The templates are starting points and must be adapted to each organisation's change, security and service-management controls.
